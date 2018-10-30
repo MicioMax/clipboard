@@ -154,18 +154,14 @@ class ClipboardXmlWriter extends Backend
 
         $strXml = $objXml->outputMemory();
 
-File::putContent($arrSet['path'] . '/' . $arrSet['filename'], $strXml);
-return TRUE;
-/*
         $objFile = new File($arrSet['path'] . '/' . $arrSet['filename']);
         $write = $objFile->write($strXml);
         if ($write)
         {
-            $objFile->close;
+            $objFile->close();
             return TRUE;
         }
         return FALSE;
-*/
     }
 
     /**
