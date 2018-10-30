@@ -34,8 +34,8 @@
 		"source":"https://github.com/menatwork-ia/clipboard"
 	},
 	"require":{
-		"php":">=5.4.0",
-        "contao/core":">=3.5.5,^4.6",
+		"php": "^7.0",
+		"contao/core-bundle": ">=4.4,<4.7",
 		"contao-community-alliance/composer-plugin":"~2.0"
 	},
 	"autoload":{
