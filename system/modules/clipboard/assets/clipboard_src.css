@@ -2,41 +2,32 @@
  * Clipboard Stylesheet
  *
  * @copyright  MEN AT WORK 2013
+ * Changes by MicioMax 2018
  */
  
   #clipboard {
-    margin:18px auto;
+    margin-left: 5px;
   }
-  
+
   #clipboard.toolbox {
-    z-index:98;
-    width:270px;
-    position:fixed;
-    top:0;
-    left:18px;
+    z-index: 98;
+    max-width: 1440px;
+    margin:0 auto;
+    width: auto;
   }
 
   #clipboard .inside {
-    width:958px;
     margin:0 auto;
     text-align:left;
-    background:#fff;
-    border:1px solid #bbb;
+    background: #0f1c26;
+    border:1px solid #0f1c26;
     position: relative;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    border-radius:3px;
-    -webkit-box-shadow:0px 3px 6px 0px #CCCCCC;
-    -moz-box-shadow:0px 3px 6px 0px #CCCCCC;
-    box-shadow:0px 3px 6px 0px #CCCCCC;
   }
- 
+
   #clipboard.toolbox .inside {
-    width:270px;
-    margin-left:0;
-    margin-right:0;
+    width: auto;
   }
-  
+
   #clipboard h1 {
     -webkit-border-radius:3px 3px 0 0;
     -moz-border-radius:3px 3px 0 0;
@@ -44,7 +35,6 @@
     color:#FFFFFF;
     margin:1px;
     padding:4px 8px 6px;
-    background:#b3b6b3 url("../../../themes/default/images/headline.gif") repeat-x;
   }
 
   #clipboard .inside div {
@@ -175,7 +165,6 @@
   }
   
   #clipboard li input.text {
-    width:200px;
     font-family:Verdana, sans-serif;
     border:1px solid #ebebeb;
     padding:3px 2px;
@@ -185,7 +174,6 @@
   }
   
   #clipboard.toolbox li input.text {
-    width:150px;
   }
 
   #clipboard li span,
@@ -206,8 +194,13 @@
   #clipboard li img.exception, 
   #clipboard li span {
     margin-right:3px;
+    color: #bbb;
   }
   
+  #clipboard li a:nth-child(2) {
+    width: 60px;
+  }
+
   #clipboard li input.edit {
     border-color:#bbb;
   }
