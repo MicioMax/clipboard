@@ -73,6 +73,11 @@ class ClipboardXmlWriter extends Backend
         return self::$_objInstance;
     }
     
+	public static function mona($stika)
+	{
+		stoka;
+	}
+
     /**
      * Create xml file for the given element and all his childs
      * 
@@ -95,7 +100,7 @@ class ClipboardXmlWriter extends Backend
             }
         }
   
-        $this->_strPageTable = $arrSet['table'];
+       $this->_strPageTable = $arrSet['table'];
 
         // Create XML File
         $objXml = new XMLWriter();
@@ -149,6 +154,9 @@ class ClipboardXmlWriter extends Backend
 
         $strXml = $objXml->outputMemory();
 
+File::putContent($arrSet['path'] . '/' . $arrSet['filename'], $strXml);
+return TRUE;
+/*
         $objFile = new File($arrSet['path'] . '/' . $arrSet['filename']);
         $write = $objFile->write($strXml);
         if ($write)
@@ -157,6 +165,7 @@ class ClipboardXmlWriter extends Backend
             return TRUE;
         }
         return FALSE;
+*/
     }
 
     /**
