@@ -171,6 +171,8 @@ class ClipboardXml extends Backend
      */
     public function hasElements()
     {
+		if (!is_array($this->_arrClipboardElements))
+			return FALSE;
         if (count($this->_arrClipboardElements) > 0)
         {
             return TRUE;

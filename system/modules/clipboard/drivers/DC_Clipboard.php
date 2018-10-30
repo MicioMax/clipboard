@@ -25,7 +25,7 @@ class DC_Clipboard extends DC_Table
 	 * @param boolean
 	 * @return string
 	 */
-	protected function generateTree($table, $id, $arrPrevNext, $blnHasSorting, $intMargin=0, $arrClipboard=null, $blnCircularReference=false, $protectedPage=false, $blnNoRecursion=false)
+	protected function generateTree($table, $id, $arrPrevNext, $blnHasSorting, $intMargin=0, $arrClipboard=null, $blnCircularReference=false, $protectedPage=false, $blnNoRecursion=false, $arrFound = array())
 	{
 		static $session;
 
